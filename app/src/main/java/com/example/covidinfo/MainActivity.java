@@ -26,35 +26,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setupFirestoreAndGetLinks();
-    }
-
-    void setupFirestoreAndGetLinks() {
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
-
-        db.collection("useful_links")
-                .get()
-                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        if (task.isSuccessful()) {
-                            for (QueryDocumentSnapshot document : task.getResult()) {
-                                Map data = document.getData();
-                                String name = (String) data.get("name");
-                                String link = (String) data.get("link");
-//                               {link=http://google.com/twitter, name=covid twitter link}
-
-                                // Creating useful link class object for one link coming from db.
-                                UsefulLink linkObj = new UsefulLink(name, link);
-
-                                // push this link in useful links array.
-                                usefulLinksList.add(linkObj);
-                            }
-                        } else {
-                            Log.w(TAG, "Error getting documents.", task.getException());
-                        }
-                    }
-                });
+        usefulLinksList = new FirebaseManager().getUsefulLinks();
     }
 
     public void newsGrid(View view) {
