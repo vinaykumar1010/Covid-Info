@@ -52,4 +52,33 @@ public class FirebaseManager {
         return usefulLinksList;
     }
 
+    public ArrayList<HelthTips> fetchHealthTips(){
+        ArrayList<HelthTips>  healthLinkList = new ArrayList<HelthTips>();
+        FirebaseFirestore db  = FirebaseFirestore.getInstance();
+        // Firebase getinstance is static method  that why we not use new keyword and make object
+        db.collection("helth_tips")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if(task.isSuccessful()){
+                          QuerySnapshot querySnapshot  = task.getResult();
+                          for (QueryDocumentSnapshot doc: querySnapshot) {
+                              Map data = doc.getData();
+                              String name = (String) data.get("name");
+                              String link = (String) data.get("link");
+                              HelthTips helthTips = new HelthTips(name,link);
+                              healthLinkList.add(helthTips);
+
+                          }
+                        }else{
+                            Log.e("tag" , "  health tip fetching failed");
+                        }
+                    }
+                });
+        return healthLinkList;
+
+    }
+
+
 }

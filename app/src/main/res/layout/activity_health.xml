@@ -5,5 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HealthActivity">
-
+    <ListView
+        android:id="@+id/health_link"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:background="@color/backgroundcolor"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

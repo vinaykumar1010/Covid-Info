@@ -31,8 +31,6 @@ public class NewsActivity extends AppCompatActivity {
     }
 
 
-
-
     void showLinksOnUI(ArrayList<UsefulLink> linkArrayList) {
         // step1.: get list view
         ListView mListView = findViewById(R.id.useful_links);
