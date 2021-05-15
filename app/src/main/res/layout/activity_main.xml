@@ -5,10 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="#fcfcfc"
+    android:background="#3F51B5"
     android:gravity="center"
     android:id="@+id/layoutII">
 
@@ -61,7 +60,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="News"
+                    android:text="Covid Resources"
                     android:textStyle="bold" />
 
                 <View
@@ -75,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="News Need to b Known"
+                    android:text="Links for Covid Supplys such as oxygen , plasma , medicines.etc."
                     android:textColor="@android:color/darker_gray" />
 
             </LinearLayout>
@@ -164,7 +163,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Protection"
+                    android:text="Vaccine Finder"
                     android:textStyle="bold" />
 
                 <View

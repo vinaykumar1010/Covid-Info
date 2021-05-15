@@ -1,7 +1,7 @@
 package com.example.covidinfo;
 
 import java.io.Serializable;
-
+// data model
 public class UsefulLink implements Serializable {
     private String name;
     private String link;

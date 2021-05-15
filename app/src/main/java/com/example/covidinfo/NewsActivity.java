@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.nfc.Tag;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -27,6 +29,9 @@ public class NewsActivity extends AppCompatActivity {
         // Step3: Put these links in content view
         showLinksOnUI(links);
     }
+
+
+
 
     void showLinksOnUI(ArrayList<UsefulLink> linkArrayList) {
         // step1.: get list view

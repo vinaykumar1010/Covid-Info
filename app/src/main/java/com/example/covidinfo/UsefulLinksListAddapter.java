@@ -1,6 +1,7 @@
 package com.example.covidinfo;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,6 +31,7 @@ public class UsefulLinksListAddapter extends ArrayAdapter<UsefulLink> {
         // Get the link data
         String name = getItem(position).getName();
         String link = getItem(position).getLink();
+        Log.d(TAG  , "name:"+name+"  link:" + link);
 
         // Create UsefulLink object using this link data
 //        UsefulLink linkObj = new UsefulLink(name, link);
@@ -47,4 +49,17 @@ public class UsefulLinksListAddapter extends ArrayAdapter<UsefulLink> {
 
         return convertView;
     }
+
+//    @Override
+//    protected void onClick() {
+//        onClick();
+//    }
+//
+//    @Override
+//    protected void onClick(View view) {
+//        Toast.makeText(view.getContext(),"This is Maps",Toast.LENGTH_SHORT).show();
+//
+//    }
+
 }
+
