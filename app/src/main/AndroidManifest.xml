@@ -12,10 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CovidInfo">
         <activity android:name=".DeathActivity"></activity>
-        <activity android:name=".ProtectionActivity" />
-        <activity android:name=".HealthActivity" />
-        <activity android:name=".NewsActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ProtectionActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+        <activity android:name=".HealthActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+        <activity android:name=".NewsActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"/>
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />

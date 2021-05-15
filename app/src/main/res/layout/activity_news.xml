@@ -5,25 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_marginHorizontal="10dp"
     tools:context=".NewsActivity">
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="10dp"
         android:gravity="center_horizontal"
         android:textColor="@color/blue"
         android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:textSize="15dp"
+        android:textSize="25dp"
         android:text="Tips to boost your immunity"
         android:textAlignment="center" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/lightgray" />
+
     <ListView
         android:id="@+id/useful_links"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:elevation="2dp"
+        android:background="@drawable/my_style"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp"
-        android:background="@color/backgroundcolor"
-        />
+        tools:layout_editor_absoluteY="0dp" />
 </LinearLayout>

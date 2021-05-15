@@ -45,6 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clickable="true"
+                android:elevation="2dp"
                 android:gravity="center"
                 android:onClick="newsGrid"
                 android:orientation="vertical">
@@ -93,6 +94,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:elevation="2dp"
                 android:onClick="healthGrid"
                 android:orientation="vertical">
 
@@ -101,7 +103,7 @@
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundpink"
                     android:padding="10dp"
-                    android:src="@drawable/tip" />
+                    app:srcCompat="@drawable/tip" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -149,6 +151,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:elevation="2dp"
                 android:onClick="protectionGrid"
                 android:orientation="vertical">
 
@@ -157,7 +160,7 @@
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackgroundgreen"
                     android:padding="10dp"
-                    android:src="@drawable/protection" />
+                    app:srcCompat="@drawable/protection" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -183,77 +186,6 @@
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            app:cardCornerRadius="24dp"
-
-            android:layout_width="160dp"
-            android:layout_height="190dp"
-            android:layout_margin="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:onClick="deathGrid"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundyelllow"
-                    android:padding="10dp"
-                    android:src="@drawable/death" />
-
-                <TextView
-                    android:id="@+id/death_grid"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Death"
-                    android:textStyle="bold" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="@color/lightgray" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="What to do if someone died"
-                    android:textColor="@android:color/darker_gray" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="340dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/my_style"
-        android:clickable="true"
-        android:clipToPadding="false"
-        android:gravity="center"
-        android:onClick="aboutUs"
-
-        android:orientation="horizontal">
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-
-            android:text="About Us"
-            android:textStyle="bold" />
-
 
     </LinearLayout>
 
