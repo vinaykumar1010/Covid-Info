@@ -19,6 +19,8 @@
         <activity android:name=".NewsActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar"/>
         <activity android:name=".MainActivity"
+            android:colorMode="hdr"
+            android:background="#358597"
             android:theme="@style/Theme.Design.Light.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

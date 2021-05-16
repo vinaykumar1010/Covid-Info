@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#358597"
+    android:layout_height="match_parent">
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -16,11 +21,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Know Everything about Covid"
+        android:text="Covid Help"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-light"
         android:textAlignment="center"
-        android:textColor="@color/blue"
-
-        android:layout_marginBottom="4dp"/>
+        android:textColor="@color/black"
+        android:layout_marginBottom="30dp"
+        tools:ignore="RtlCompat" />
 
     <LinearLayout
         android:clipToPadding="false"
@@ -46,6 +53,7 @@
                 android:layout_height="match_parent"
                 android:clickable="true"
                 android:elevation="2dp"
+                android:background="#C5CAE9"
                 android:gravity="center"
                 android:onClick="newsGrid"
                 android:orientation="vertical">
@@ -68,13 +76,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_margin="10dp"
-                    android:background="@color/lightgray" />
+                    android:background="@color/black" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
+                    android:textSize="12dp"
                     android:text="Links for Covid Supplys such as oxygen , plasma , medicines.etc."
                     android:textColor="@android:color/darker_gray" />
 
@@ -94,7 +103,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:elevation="2dp"
+                android:elevation="20dp"
+                android:background="#F3E5F5"
                 android:onClick="healthGrid"
                 android:orientation="vertical">
 
@@ -109,6 +119,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+
                     android:text="Health Tips"
                     android:textStyle="bold" />
 
@@ -116,13 +127,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_margin="10dp"
-                    android:background="@color/lightgray" />
+                    android:background="@color/black" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
+                    android:textSize="12dp"
                     android:text="Necessary Health Tips"
                     android:textColor="@android:color/darker_gray" />
 
@@ -151,6 +163,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:background="#B2DFDB"
                 android:elevation="2dp"
                 android:onClick="protectionGrid"
                 android:orientation="vertical">
@@ -173,7 +186,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_margin="10dp"
-                    android:background="@color/lightgray" />
+                    android:background="@color/black" />
 
                 <TextView
                     android:id="@+id/view_protect"
@@ -181,6 +194,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
+                    android:textSize="12dp"
                     android:text="Protect Yourself From Covid"
                     android:textColor="@android:color/darker_gray" />
 
@@ -190,4 +204,5 @@
     </LinearLayout>
 
 
+</LinearLayout>
 </LinearLayout>
