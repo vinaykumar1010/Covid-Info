@@ -1,23 +1,17 @@
-package com.example.covidinfo;
-
+package com.vinay.covidinfo;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.nfc.Tag;
 import android.os.Bundle;
-import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.widget.ListView;
-import android.widget.TextView;
-
 import java.util.ArrayList;
 
-public class NewsActivity extends AppCompatActivity {
+public class CovidResourceActivity extends AppCompatActivity {
     String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.d(TAG, "NewsActivity OnCreate");
+        Log.d(TAG, "CovidResourceActivity OnCreate");
         super.onCreate(savedInstanceState);
 
         // Step1: Show the content view
@@ -29,7 +23,6 @@ public class NewsActivity extends AppCompatActivity {
         // Step3: Put these links in content view
         showLinksOnUI(links);
     }
-
 
     void showLinksOnUI(ArrayList<UsefulLink> linkArrayList) {
         // step1.: get list view
@@ -43,12 +36,12 @@ public class NewsActivity extends AppCompatActivity {
             Step1 : First get bundle from intent.
             Step 2: Get array list from bundle
         * */
-        Log.d(TAG, "getLinkData");
+       // Log.d(TAG, "getLinkData");
         Intent intent = getIntent();
         Bundle args = intent.getBundleExtra("LinksBundle");
-        Log.d(TAG, "Bundle received");
+      //  Log.d(TAG, "Bundle received");
         ArrayList<UsefulLink> links = (ArrayList<UsefulLink>) args.getSerializable("usefulLinksArrayList");
-        Log.d(TAG, "links: " + links);
+     //   Log.d(TAG, "links: " + links);
         return links;
     }
 }

@@ -1,10 +1,10 @@
-package com.example.covidinfo;
+package com.vinay.covidinfo;
 
 import java.io.Serializable;
 
 public class HelthTips implements Serializable {
-    private String name;
-    private String link;
+    private final String name;
+    private final String link;
 
     public HelthTips(String name, String link){
         this.name = name;

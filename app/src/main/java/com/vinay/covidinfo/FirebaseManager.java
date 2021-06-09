@@ -1,4 +1,4 @@
-package com.example.covidinfo;
+package com.vinay.covidinfo;
 
 import android.util.Log;
 
@@ -14,8 +14,7 @@ import java.util.ArrayList;
 import java.util.Map;
 
 public class FirebaseManager {
-    private String TAG = "FirebaseManager";
-
+    private final String TAG = "FirebaseManager";
     /**
      * Function to fetch list of useful links from firebase firestore
      * @return
@@ -79,6 +78,4 @@ public class FirebaseManager {
         return healthLinkList;
 
     }
-
-
 }

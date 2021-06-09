@@ -5,23 +5,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#358597"
     android:layout_height="match_parent">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="#F3F3F3"
+    android:background="#F5F5FF"
     android:gravity="center"
     android:id="@+id/layoutII">
+
+    <ImageView
+        android:layout_width="171dp"
+        android:layout_height="143dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/corona" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Covid Help"
+        android:text="Covid Resources"
         android:textSize="20dp"
         android:fontFamily="sans-serif-light"
         android:textAlignment="center"
@@ -51,9 +56,9 @@
                 android:id="@+id/news_grid"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="#C5CAE9"
                 android:clickable="true"
                 android:elevation="2dp"
-                android:background="#C5CAE9"
                 android:gravity="center"
                 android:onClick="newsGrid"
                 android:orientation="vertical">
@@ -61,7 +66,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundpurple"
+                    android:background="@drawable/backgroundcirclepurple"
                     android:padding="10dp"
                     app:srcCompat="@drawable/news" />
 
@@ -83,9 +88,9 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:textSize="12dp"
                     android:text="Links for Covid Supplys such as oxygen , plasma , medicines.etc."
-                    android:textColor="@android:color/darker_gray" />
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12dp" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -111,7 +116,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundpink"
+                    android:background="@drawable/backgroundcirclepink"
                     android:padding="10dp"
                     app:srcCompat="@drawable/tip" />
 
@@ -171,7 +176,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundgreen"
+                    android:background="@drawable/backgroundcirclegren"
                     android:padding="10dp"
                     app:srcCompat="@drawable/protection" />
 

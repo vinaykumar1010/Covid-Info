@@ -1,19 +1,11 @@
-package com.example.covidinfo;
-import androidx.annotation.NonNull;
+package com.vinay.covidinfo;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
-
+import android.widget.Toast;
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
     ArrayList<UsefulLink> usefulLinksList = new ArrayList<UsefulLink>();
@@ -29,12 +21,11 @@ public class MainActivity extends AppCompatActivity {
         usefulLinksList = firebaseObj.getUsefulLinks(); //new FirebaseManager().getUsefulLinks();
 
         healthLinkList = firebaseObj.fetchHealthTips();
-        // new give object of  firebase manager class whom function is calld e
-
+        // new give object of  firebase manager class whom function is called
     }
 
     public void newsGrid(View view) {
-        Intent intent = new Intent(this, NewsActivity.class);
+        Intent intent = new Intent(this, CovidResourceActivity.class);
         Bundle args = new Bundle();
         args.putSerializable("usefulLinksArrayList", (Serializable) usefulLinksList);
         intent.putExtra("LinksBundle", args);
@@ -51,13 +42,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void protectionGrid(View view) {
-        Intent intent = new Intent(this, ProtectionActivity.class);
-        startActivity(intent);
+        Toast.makeText(MainActivity.this, "Coming Soon", Toast.LENGTH_SHORT).show();
+//        Intent intent = new Intent(this, ProtectionActivity.class);
+//        startActivity(intent);
+        return;
     }
 
-    public void deathGrid(View view) {
-        Intent intent = new Intent(this, DeathActivity.class);
-        startActivity(intent);
-    }
+
 
 }

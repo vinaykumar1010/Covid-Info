@@ -1,10 +1,9 @@
-package com.example.covidinfo;
+package com.vinay.covidinfo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -24,7 +23,6 @@ public class HealthActivity extends AppCompatActivity {
         ListView mListView = findViewById(R.id.health_link);
         HelthTipsAdapter healthAdapter = new HelthTipsAdapter(this, R.layout.health_adapter_link_layout, linkArrayList);
         mListView.setAdapter(healthAdapter);
-
     }
 
     ArrayList<HelthTips> getHealthTipsData() {
@@ -37,4 +35,5 @@ public class HealthActivity extends AppCompatActivity {
         ArrayList<HelthTips> links = (ArrayList<HelthTips>) args.getSerializable("HealthTipsArrayList");
         return links;
     }
+
 }

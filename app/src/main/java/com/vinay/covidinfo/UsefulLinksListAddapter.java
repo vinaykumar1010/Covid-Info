@@ -1,4 +1,4 @@
-package com.example.covidinfo;
+package com.vinay.covidinfo;
 
 import android.content.Context;
 import android.util.Log;
@@ -12,12 +12,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class UsefulLinksListAddapter extends ArrayAdapter<UsefulLink> {
     String TAG = "UsefulLinksListAdapter";
-    private Context mContext;
-    private int mResource;
+    private final Context mContext;
+    private final int mResource;
 
     public UsefulLinksListAddapter(@NonNull Context context, int resource, @NonNull ArrayList<UsefulLink> usefulLinks) {
         super(context, resource, usefulLinks);

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.covidinfo">
+    package="com.vinay.covidinfo">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -11,20 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CovidInfo">
-        <activity android:name=".DeathActivity"></activity>
-        <activity android:name=".ProtectionActivity"
+        <activity android:name="com.vinay.covidinfo.ProtectionActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar"/>
-        <activity android:name=".HealthActivity"
+        <activity android:name="com.vinay.covidinfo.HealthActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar"/>
-        <activity android:name=".NewsActivity"
+        <activity android:name="com.vinay.covidinfo.CovidResourceActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar"/>
-        <activity android:name=".MainActivity"
+        <activity android:name="com.vinay.covidinfo.MainActivity"
             android:colorMode="hdr"
             android:background="#358597"
             android:theme="@style/Theme.Design.Light.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.vinay.covidinfo.MainActivity" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

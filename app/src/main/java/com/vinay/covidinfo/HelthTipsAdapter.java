@@ -1,24 +1,19 @@
-package com.example.covidinfo;
-
+package com.vinay.covidinfo;
 import android.widget.ArrayAdapter;
-
-
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 public class HelthTipsAdapter extends ArrayAdapter<HelthTips> {
     String TAG = "HealthTipsAdapter";
-    private Context mContext;
-    private int mResource;
+    private final Context mContext;
+    private final int mResource;
 
     public HelthTipsAdapter(@NonNull Context hcontext, int hresource, @NonNull ArrayList<HelthTips> HealthTips) {
         super(hcontext, hresource, HealthTips);

@@ -1,4 +1,4 @@
-package com.example.covidinfo;
+package com.vinay.covidinfo;
 
 import android.content.Context;
 
