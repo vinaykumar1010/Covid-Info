@@ -1,4 +1,4 @@
-package com.vinay.covidinfo;
+package com.vinay.resourcesc_19;
 import java.io.Serializable;
 // data model
 public class UsefulLink implements Serializable {

@@ -1,4 +1,4 @@
-package com.vinay.covidinfo;
+package com.vinay.resourcesc_19;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;

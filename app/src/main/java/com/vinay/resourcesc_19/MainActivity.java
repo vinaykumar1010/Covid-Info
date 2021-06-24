@@ -1,4 +1,4 @@
-package com.vinay.covidinfo;
+package com.vinay.resourcesc_19;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
